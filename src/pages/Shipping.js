@@ -53,10 +53,10 @@ const Shipping = () => {
           <div className="col-md-10">
             <div className="card mt-5 shadow-sm border-0">
               <div className="card-body">
-                <h5 className="card-title">Shipping address</h5>
+                <h5 className="card-title mb-4">Shipping address</h5>
                 <form>
                   <div className="form-row">
-                    <div className="form-group col-md-6">
+                    <div className="form-group input-group-lg col-md-6 mb-3">
                       <input
                         name="fname"
                         onChange={(e) => handleInputChange(e)}
@@ -67,7 +67,7 @@ const Shipping = () => {
                         className="form-control"
                       />
                     </div>
-                    <div className="form-group col-md-6">
+                    <div className="form-group input-group-lg col-md-6 mb-3">
                       <input
                         name="lname"
                         onChange={(e) => handleInputChange(e)}
@@ -79,7 +79,7 @@ const Shipping = () => {
                       />
                     </div>
                   </div>
-                  <div className="input-group mb-3">
+                  <div className="input-group input-group-lg mb-3">
                     <input
                       name="pin"
                       maxLength="6"
@@ -100,7 +100,7 @@ const Shipping = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="form-group">
+                  <div className="form-group input-group-lg mb-3">
                     <input
                       name="address"
                       onChange={(e) => handleInputChange(e)}
@@ -111,7 +111,7 @@ const Shipping = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="form-group">
+                  <div className="form-group input-group-lg mb-3">
                     <input
                       name="apartment"
                       onChange={(e) => handleInputChange(e)}
@@ -122,7 +122,7 @@ const Shipping = () => {
                       className="form-control"
                     />
                   </div>
-                  <div className="form-group">
+                  <div className="form-group input-group-lg mb-3">
                     <input
                       name="city"
                       onChange={(e) => handleInputChange(e)}
@@ -134,7 +134,7 @@ const Shipping = () => {
                     />
                   </div>
                   <div className="form-row">
-                    <div className="form-group col-md-6">
+                    <div className="form-group input-group-lg col-md-6">
                       <select
                         name="country"
                         className="form-control"
@@ -144,7 +144,7 @@ const Shipping = () => {
                         <option>{input.country}</option>
                       </select>
                     </div>
-                    <div className="form-group col-md-6">
+                    <div className="form-group input-group-lg col-md-6">
                       <select
                         name="state"
                         className="form-control"
@@ -155,7 +155,7 @@ const Shipping = () => {
                       </select>
                     </div>
                   </div>
-                  <div className="form-group">
+                  <div className="form-group input-group-lg">
                     <input
                       name="phone"
                       maxLength="10"
