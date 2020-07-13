@@ -38,6 +38,12 @@ const Shipping = () => {
       [e.target.name]: e.target.value,
     });
   };
+  const handleNumberInput = (e) => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value.replace(/\D/, ""),
+    });
+  };
 
   return (
     <div>
@@ -73,7 +79,7 @@ const Shipping = () => {
                       />
                     </div>
                   </div>
-                  <div className="form-group">
+                  <div className="input-group mb-3">
                     <input
                       name="pin"
                       maxLength="6"
@@ -83,7 +89,16 @@ const Shipping = () => {
                       placeholder="PIN code"
                       type="text"
                       className="form-control"
+                      style={{ borderRight: "none" }}
                     />
+                    <div className="input-group-append">
+                      <span
+                        className="input-group-text"
+                        style={{ background: "white", borderLeft: "none" }}
+                      >
+                        <i className="fas fa-map-marker-alt"></i>
+                      </span>
+                    </div>
                   </div>
                   <div className="form-group">
                     <input
@@ -143,11 +158,12 @@ const Shipping = () => {
                   <div className="form-group">
                     <input
                       name="phone"
-                      onChange={(e) => handleInputChange(e)}
+                      maxLength="10"
+                      onChange={(e) => handleNumberInput(e)}
                       required
                       value={input.phone}
                       placeholder="Phone"
-                      type="number"
+                      type="text"
                       className="form-control"
                     />
                   </div>
