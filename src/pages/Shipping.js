@@ -29,7 +29,6 @@ const Shipping = () => {
             toast.success(res.data[0].Message);
             setData(res.data[0].PostOffice);
             console.log(res.data[0].PostOffice);
-            console.log(res.data[0].PostOffice);
             setInput({
               country: res.data[0].PostOffice[0].Country,
               state: res.data[0].PostOffice[0].State,
@@ -133,7 +132,7 @@ const Shipping = () => {
                         placeholder="Country/Region"
                         defaultValue={input.country}
                       >
-                        <option>{input.state}</option>
+                        <option>{input.country}</option>
                       </select>
                     </div>
                     <div className="form-group col-md-6">
