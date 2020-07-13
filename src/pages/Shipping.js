@@ -72,7 +72,7 @@ const Shipping = () => {
                   <div className="form-group">
                     <input
                       name="pin"
-                      maxLength="7"
+                      maxLength="6"
                       onChange={(e) => getShippingAddr(e.target.value)}
                       required
                       value={input.pin}
