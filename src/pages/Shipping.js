@@ -48,12 +48,14 @@ const Shipping = () => {
   return (
     <div>
       <ToastContainer autoClose={2000} position="top-right" />
-      <div className="container">
+      <div className="container g-font">
         <div className="row d-flex justify-content-center">
           <div className="col-md-10">
             <div className="card mt-5 shadow-sm border-0">
               <div className="card-body">
-                <h5 className="card-title mb-4">Shipping address</h5>
+                <h5 className="card-title mb-4 h4" style={{ color: "#696969" }}>
+                  Shipping address
+                </h5>
                 <form>
                   <div className="form-row">
                     <div className="form-group input-group-lg col-md-6 mb-3">
