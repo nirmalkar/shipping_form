@@ -11,10 +11,9 @@ const Shipping = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const getShippingAddr = (pincode) => {
-    console.log(pincode);
     if (
       pincode.length > 5 &&
-      pincode.length < 7 &&
+      pincode.length === 6 &&
       data.length === 0 &&
       isLoading === false
     ) {
@@ -28,7 +27,6 @@ const Shipping = () => {
           } else {
             toast.success(res.data[0].Message);
             setData(res.data[0].PostOffice);
-            console.log(res.data[0].PostOffice);
             setInput({
               country: res.data[0].PostOffice[0].Country,
               state: res.data[0].PostOffice[0].State,
