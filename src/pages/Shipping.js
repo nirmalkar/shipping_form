@@ -66,7 +66,7 @@ const Shipping = () => {
                         value={input.fname}
                         placeholder="First name (optional)"
                         type="text"
-                        className="form-control"
+                        className="form-control decoration-none"
                       />
                     </div>
                     <div className="form-group input-group-lg col-md-6 mb-3">
@@ -77,7 +77,7 @@ const Shipping = () => {
                         value={input.lname}
                         placeholder="Last name"
                         type="text"
-                        className="form-control"
+                        className="form-control decoration-none"
                       />
                     </div>
                   </div>
@@ -90,7 +90,7 @@ const Shipping = () => {
                       value={input.pin}
                       placeholder="PIN code"
                       type="text"
-                      className="form-control"
+                      className="form-control decoration-none"
                       style={{ borderRight: "none" }}
                     />
                     <div className="input-group-append">
@@ -110,7 +110,7 @@ const Shipping = () => {
                       value={input.address}
                       placeholder="Address"
                       type="text"
-                      className="form-control"
+                      className="form-control decoration-none"
                     />
                   </div>
                   <div className="form-group input-group-lg mb-3">
@@ -121,7 +121,7 @@ const Shipping = () => {
                       value={input.apartment}
                       placeholder="Apartment, suite, etc. (optional)"
                       type="text"
-                      className="form-control"
+                      className="form-control decoration-none"
                     />
                   </div>
                   <div className="form-group input-group-lg mb-3">
@@ -132,14 +132,14 @@ const Shipping = () => {
                       value={input.city}
                       placeholder="City"
                       type="text"
-                      className="form-control"
+                      className="form-control decoration-none"
                     />
                   </div>
                   <div className="form-row">
                     <div className="form-group input-group-lg col-md-6">
                       <select
                         name="country"
-                        className="form-control"
+                        className="form-control decoration-none"
                         placeholder="Country/Region"
                         defaultValue={input.country}
                       >
@@ -149,7 +149,7 @@ const Shipping = () => {
                     <div className="form-group input-group-lg col-md-6">
                       <select
                         name="state"
-                        className="form-control"
+                        className="form-control decoration-none"
                         placeholder="State"
                         defaultValue={input.state}
                       >
@@ -166,7 +166,7 @@ const Shipping = () => {
                       value={input.phone}
                       placeholder="Phone"
                       type="text"
-                      className="form-control"
+                      className="form-control decoration-none"
                     />
                   </div>
                 </form>
