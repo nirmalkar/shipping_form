@@ -17,6 +17,10 @@ const Shipping = () => {
           setIsLoading(false);
           if (res.data[0].PostOffice === null) {
             toast.info(res.data[0].Message);
+            setInput({
+              country: "",
+              state: "",
+            });
           } else {
             toast.success(res.data[0].Message);
             setInput({
