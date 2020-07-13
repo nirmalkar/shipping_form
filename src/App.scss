@@ -1,0 +1,19 @@
+.App {
+  height: 30rem;
+  width: 30rem;
+  background-color: blue;
+  position: relative;
+  margin: auto;
+}
+
+.box {
+  height: 10rem;
+  width: 10rem;
+  background: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-20deg);
+  transform: scale(2);
+  transform: translate(-50%, -50%);
+}
