@@ -6,17 +6,11 @@ import { useInputState } from "../hooks/useInputState";
 // import { initialShipping } from "./util";
 
 const Shipping = () => {
-  const [input, setInput] = useInputState("");
-  const [data, setData] = useInputState([]);
+  const [input, setInput] = useInputState({});
   const [isLoading, setIsLoading] = useState(false);
 
   const getShippingAddr = (pincode) => {
-    if (
-      pincode.length > 5 &&
-      pincode.length === 6 &&
-      data.length === 0 &&
-      isLoading === false
-    ) {
+    if (pincode.length > 5 && pincode.length === 6 && isLoading === false) {
       setIsLoading(true);
       axios
         .get(`https://api.postalpincode.in/pincode/${pincode}`)
@@ -26,7 +20,6 @@ const Shipping = () => {
             toast.info(res.data[0].Message);
           } else {
             toast.success(res.data[0].Message);
-            setData(res.data[0].PostOffice);
             setInput({
               country: res.data[0].PostOffice[0].Country,
               state: res.data[0].PostOffice[0].State,
