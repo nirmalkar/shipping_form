@@ -3,7 +3,6 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 import { useInputState } from "../hooks/useInputState";
-// import { initialShipping } from "./util";
 
 const Shipping = () => {
   const [input, setInput] = useInputState({});

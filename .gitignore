@@ -26,5 +26,5 @@ yarn-error.log*
 # eslint cache file 
 .eslintcache
 
-#environment varibale file
-.env
+# #environment varibale file
+# .env
