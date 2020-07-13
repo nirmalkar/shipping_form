@@ -9,6 +9,7 @@ const Shipping = () => {
   const [input, setInput] = useInputState("");
   const [data, setData] = useInputState([]);
   const [isLoading, setIsLoading] = useState(false);
+  let name;
 
   const getShippingAddr = (pincode) => {
     if (
