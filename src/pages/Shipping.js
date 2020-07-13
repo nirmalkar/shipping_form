@@ -119,7 +119,7 @@ const Shipping = () => {
                       onChange={(e) => handleInputChange(e)}
                       required
                       value={input.apartment}
-                      placeholder="Apartment,suite,etc (optional)"
+                      placeholder="Apartment, suite, etc. (optional)"
                       type="text"
                       className="form-control"
                     />
